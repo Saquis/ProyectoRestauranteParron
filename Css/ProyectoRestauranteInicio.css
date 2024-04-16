@@ -7,6 +7,9 @@
 }
 body{
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 header{
     display: flex;
@@ -83,6 +86,31 @@ li:hover .submenu {
     margin: 0; 
     z-index: 1;
 }
+/* primera seccion  */
+.contenedorSeccion{
+    display: flex;
+}
+.seccion{
+    color: white;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;  
+}
+
+.seccion, img{
+    width: 600px;
+
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: gold;
+}
+p{
+    font-size: 25px;
+}
+
 /* footer */
 footer p{
     color: white;
