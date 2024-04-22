@@ -29,12 +29,19 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+    padding: 2px;
+}
+header nav ul li:hover {
+    background-color: chartreuse; /* Cambia el color de fondo */
+    color: black;
+    
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 /* submenu */
@@ -56,6 +63,9 @@ nav ul li a {
 
 li:hover .submenu {
     display: block;
+}
+header nav ul li i {
+    color: white; 
 }
 
 /* contenedorImagen*/
