@@ -184,3 +184,42 @@ footer p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+/* Sobre Nosotros */
+.contenedorSobreNosotros {
+    background-color: #333; 
+    padding: 40px 100px; 
+    color: white;
+    text-align: center;
+}
+
+.contenedorSobreNosotros h1 {
+    color: gold;
+    margin-bottom: 20px; 
+}
+
+.contenidoSobreNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.contenidoSobreNosotros img {
+    max-width: 300px; 
+    margin-right: 20px; 
+    border-radius: 10px; 
+}
+
+.contenidoSobreNosotros p {
+    font-size: 20px;
+    flex: 1; 
+}
+
+@media (max-width: 768px) {
+    .contenidoSobreNosotros {
+        flex-direction: column;
+    }
+    .contenidoSobreNosotros img {
+        margin-bottom: 20px;
+    }
+}
