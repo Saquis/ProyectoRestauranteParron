@@ -1,0 +1,70 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: gold;
+}
+
+/* Estilos de la sección principal */
+.mainContent {
+    padding: 20px;
+}
+
+.category {
+    background-color: #111; /* Fondo negro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.category h2 {
+    color: gold;
+}
+
+.category p {
+    color: white;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
