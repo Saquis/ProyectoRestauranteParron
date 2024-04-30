@@ -60,7 +60,7 @@ header nav ul li i {
 
 .contenedorSobreNosotros h1 {
     color: gold;
-    margin-bottom: 20px; /* Espaciado debajo del título */
+    margin-bottom: 20px; 
 }
 
 .contenidoSobreNosotros {
@@ -71,21 +71,21 @@ header nav ul li i {
 }
 
 .contenidoSobreNosotros img {
-    max-width: 300px; /* Tamaño adecuado para la imagen */
-    margin-right: 20px; /* Espaciado entre imagen y texto */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
+    max-width: 300px; 
+    margin-right: 20px; 
+    border-radius: 10px; 
 }
 
 .contenidoSobreNosotros p {
     font-size: 20px;
-    flex: 1; /* El texto ocupa el espacio restante */
+    flex: 1; 
 }
 
 @media (max-width: 768px) {
     .contenidoSobreNosotros {
-        flex-direction: column; /* Cambio de layout en móviles */
+        flex-direction: column; 
     }
     .contenidoSobreNosotros img {
-        margin-bottom: 20px; /* Espaciado cuando la imagen está arriba */
+        margin-bottom: 20px; 
     }
 }

@@ -49,7 +49,7 @@
                         <a class="nav-link" href="Menu.html">Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="contacto.html">Contacto</a>
@@ -79,23 +79,23 @@
         </form>
     </div>
 
-    <!-- Bootstrap JavaScript y jQuery -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-    <!-- JavaScript personalizado para validar el formulario -->
+   
     <script>
         document.getElementById('contactForm').addEventListener('submit', function (event) {
-            // Evitar que el formulario se envíe
+            
             event.preventDefault();
-            // Obtener los valores de los campos
+            
             var nombre = document.getElementById('nombre').value;
             var email = document.getElementById('email').value;
             var mensaje = document.getElementById('mensaje').value;
 
             if (nombre && email && mensaje) {
-                // Aquí puedes agregar la lógica para enviar el formulario (por ejemplo, mediante AJAX)
+                
                 alert('¡Mensaje enviado con éxito!');
-                // Limpiar el formulario después de enviar
+                
                 document.getElementById('contactForm').reset();
             } else {
                 alert('Por favor, completa todos los campos.');
