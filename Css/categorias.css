@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 .category {
-    background-color: #111; /* Fondo negro */
+    background-color: #111; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -61,7 +61,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Estilos del pie de página */
+
 footer {
     background-color: #333;
     color: white;
