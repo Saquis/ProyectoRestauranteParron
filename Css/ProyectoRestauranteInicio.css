@@ -31,10 +31,12 @@ nav ul li {
     margin-right: 20px;
     padding: 2px;
 }
+
 header nav ul li:hover {
-    background-color: chartreuse; /* Cambia el color de fondo */
+    background-color: chartreuse;
+    /* Cambia el color de fondo */
     color: black;
-    
+
 }
 
 nav ul li a {
@@ -44,28 +46,8 @@ nav ul li a {
     font-size: 20px;
 }
 
-/* submenu */
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: black;
-    padding: 10px;
-}
-
-.submenu li {
-    display: block;
-}
-
-.submenu li a {
-    text-decoration: none;
-    color: white;
-}
-
-li:hover .submenu {
-    display: block;
-}
 header nav ul li i {
-    color: white; 
+    color: white;
 }
 
 /* contenedorImagen*/
@@ -184,17 +166,18 @@ footer p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+
 /* Sobre Nosotros */
 .contenedorSobreNosotros {
-    background-color: #333; 
-    padding: 40px 100px; 
+    background-color: #333;
+    padding: 40px 100px;
     color: white;
     text-align: center;
 }
 
 .contenedorSobreNosotros h1 {
     color: gold;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .contenidoSobreNosotros {
@@ -205,21 +188,157 @@ footer p {
 }
 
 .contenidoSobreNosotros img {
-    max-width: 300px; 
-    margin-right: 20px; 
-    border-radius: 10px; 
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .contenidoSobreNosotros p {
     font-size: 20px;
-    flex: 1; 
+    flex: 1;
 }
 
-@media (max-width: 768px) {
-    .contenidoSobreNosotros {
-        flex-direction: column;
+@media (max-width: 800px) {
+    header img {
+        max-width: 100px;
     }
-    .contenidoSobreNosotros img {
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .contenedorImagen {
+        height: 300px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contenedorImagen h1 {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedorImagen p {
+        font-size: 20px;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-40%);
+
+
+    }
+
+    .contenedorSeccion {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 150px;
+    }
+
+    .contenedorSeccion .seccion {
+        flex: 1;
+        text-align: center;
+    }
+
+    .contenedorSeccion img {
+        max-width: 200px;
         margin-bottom: 20px;
     }
+
+    .contenedorSeccion h1 {
+        font-size: 20px;
+    }
+
+    .contenedorSeccion p {
+        font-size: 20px;
+    }
+
+    .contenedorSeccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* media query 400px */
+@media (max-width: 400px) {
+    header img {
+       max-width: 80px;
+        
+    }
+
+    nav ul li a {
+        font-size: 1px;
+        
+    }
+
+    .contenedorImagen {
+        height: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contenedorImagen h1 {
+        font-size: 16px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+    }
+
+    .contenedorImagen p {
+        font-size: 16px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contenedorSeccion {
+        padding: 80px; 
+    }
+
+    .contenedorSeccion .seccion {
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    .contenedorSeccion img {
+        max-width: 100%; 
+    }
+
+    .contenedorSeccion h1,
+    .contenedorSeccion p {
+        font-size: 16px; 
+    }
+    .contenedorMasVendidos {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .contenedorMasVendidos .contenedoresPlatos {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+
+    .contenedorMasVendidos .contenedoresPlatos img {
+        max-width: 100%; 
+        height: auto;
+        display: block; 
+        margin: 0 auto;
+    }
+    footer p b{
+        font-size: 15px;
+    }
+    
+
 }

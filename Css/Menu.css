@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
- /* platos principales  */
+}
+
+/* platos principales  */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,11 +14,13 @@ body {
 .mainMenu {
     padding: 10px;
     background-color: black;
-    
+
 }
-.mainMenu .menu{
+
+.mainMenu .menu {
     padding: 10px;
 }
+
 .mainMenu h2 {
     color: gold;
     text-align: center;
@@ -42,23 +45,193 @@ body {
     vertical-align: top;
     opacity: .7;
 }
-.mainMenu .menu img:hover{
+
+.mainMenu .menu img:hover {
     opacity: 1;
     -webkit-transition: all 0.3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
 }
-.mainMenu .platosPrincipales .menu .menu2 .detalle{
+
+.mainMenu .platosPrincipales .menu .menu2 .detalle {
     background-color: #B8E994;
 }
-.mainMenu .platosPrincipales .menu .menu2 .detalle h1{
+
+.mainMenu .platosPrincipales .menu .menu2 .detalle h1 {
     padding: 20px;
     color: black;
     text-align: center;
     font-size: 25px;
 }
-.mainMenu .platosPrincipales .menu .menu2 .detalle p{
+
+.mainMenu .platosPrincipales .menu .menu2 .detalle p {
     color: black;
     text-align: center;
     font-size: 20px;
+}
+
+/* media query 800px */
+@media (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainMenu {
+        padding: 10px;
+        background-color: black;
+    }
+
+    .mainMenu .menu {
+        padding: 10px;
+    }
+
+    .mainMenu h2 {
+        color: gold;
+        text-align: center;
+        font-size: 25px;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .platosPrincipales {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .menu {
+        width: calc(100% - 20px);
+        
+        margin-bottom: 20px;
+    }
+
+    .menu img {
+        width: 100%;
+        border-radius: 5px;
+        vertical-align: top;
+        opacity: .7;
+    }
+
+    .mainMenu .menu img:hover {
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .mainMenu .platosPrincipales .menu .menu2 .detalle {
+        background-color: #B8E994;
+    }
+
+    .mainMenu .platosPrincipales .menu .menu2 .detalle h1 {
+        padding: 20px;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .mainMenu .platosPrincipales .menu .menu2 .detalle p {
+        color: black;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    header img {
+        max-width: 121px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 5px;
+    }
+
+    header img {
+        max-width: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mainMenu {
+        padding: 10px;
+        background-color: black;
+    }
+
+    .mainMenu .menu {
+        padding: 10px;
+    }
+
+    .mainMenu h2 {
+        color: gold;
+        text-align: center;
+        font-size: 30px;
+        padding: 25px;
+    }
+
+    .platosPrincipales {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .menu img {
+        width: 100%;
+        border-radius: 5px;
+        vertical-align: top;
+        opacity: .7;
+    }
+
+    .mainMenu .menu img:hover {
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .mainMenu .platosPrincipales .menu .menu2 .detalle {
+        background-color: #B8E994;
+    }
+
+    .mainMenu .platosPrincipales .menu .menu2 .detalle h1 {
+        padding: 20px;
+        color: black;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .mainMenu .platosPrincipales .menu .menu2 .detalle p {
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .footer p b{
+        font-size: 15px;
+    }
 }
